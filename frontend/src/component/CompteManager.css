@@ -1,0 +1,170 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f8fa; /* Fond légèrement gris clair */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #1e3a8a; /* Bleu foncé pour les titres */
+  margin-bottom: 30px;
+  font-size: 28px; /* Taille réduite pour les titres */
+  font-weight: bold;
+  letter-spacing: 0.5px; /* Espacement entre les lettres */
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9); /* Fond blanc avec légère transparence */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Ombre plus forte au survol */
+  transform: translateY(-4px); /* Légère remontée de l'élément */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0; /* Bordure grise claire */
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  background-color: #f9fafb; /* Légère couleur de survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Ombre légère au survol */
+}
+
+li p {
+  margin: 0;
+  font-size: 16px;
+}
+
+li strong {
+  color: #1e3a8a; /* Bleu foncé pour les éléments importants */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 15px; /* Taille réduite pour les boutons */
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+button:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Ombre plus marquée au survol */
+}
+
+button:active {
+  transform: scale(1); /* Retour à la taille d'origine au clic */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre après clic */
+}
+
+button:first-of-type {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+button:first-of-type:hover {
+  background-color: #1e40af;
+}
+
+button:last-of-type {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+button:last-of-type:hover {
+  background-color: #c0392b;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 14px; /* Taille réduite des labels */
+}
+
+form input, form select {
+  padding: 12px;
+  border: 1px solid #d1d5db; /* Bordure grise claire */
+  border-radius: 6px;
+  font-size: 14px; /* Taille réduite du texte des champs */
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+  outline: none;
+}
+
+form button[type="submit"] {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+form button[type="button"] {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.cancel-btn {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #1e3a8a; /* Bleu pour le lien d'annulation */
+}
+
+.cancel-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cancel-btn a:hover {
+  text-decoration: underline;
+}
+
+
